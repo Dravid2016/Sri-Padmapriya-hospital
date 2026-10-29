@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-primary: #78266F;
+    --brand-deep: #482047;
+    --brand-green: #155943;
+    --color-white: #FFFFFF;
+    --color-bg-neutral: #FAF9FB;
+    --color-text-main: #24212A;
+    --color-text-secondary: #69636E;
+    --color-border: #E5E1E7;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--color-text-main);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Color Utility Classes */
+.bg-brand-primary {
+  background-color: #78266F;
+}
+.text-brand-primary {
+  color: #78266F;
+}
+.border-brand-primary {
+  border-color: #78266F;
+}
+
+.bg-brand-deep {
+  background-color: #482047;
+}
+.text-brand-deep {
+  color: #482047;
+}
+
+.bg-brand-green {
+  background-color: #155943;
+}
+.text-brand-green {
+  color: #155943;
+}
+.border-brand-green {
+  border-color: #155943;
+}
+
+.bg-neutral-surface {
+  background-color: #FAF9FB;
+}
+.text-secondary {
+  color: #69636E;
+}
+.border-subtle {
+  border-color: #E5E1E7;
+}
+
+/* Accessible focus outline */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #78266F;
+  outline-offset: 2px;
+}
+
+/* Doctor card shift motion */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0.2;
+    transform: translateX(85px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-85px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

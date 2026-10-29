@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="12" fill="#68236B"/>
+  <path d="M24 10 C16 10 12 18 12 24 C12 31 17 38 24 38 C31 38 36 31 36 24 C36 18 32 10 24 10 Z" fill="none" stroke="#2D5A43" stroke-width="2"/>
+  <!-- Stylized Lotus / Flower petals in green and white -->
+  <path d="M24 14 C27 20 28 26 24 32 C20 26 21 20 24 14 Z" fill="#2D5A43"/>
+  <path d="M24 23 C18 20 14 26 18 31 C21 31 23 27 24 23 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M24 23 C30 20 34 26 30 31 C27 31 25 27 24 23 Z" fill="#ffffff" opacity="0.9"/>
+  <text x="24" y="44" font-size="8" font-family="sans-serif" font-weight="bold" fill="#ffffff" text-anchor="middle">SPH</text>
+</svg>
+
