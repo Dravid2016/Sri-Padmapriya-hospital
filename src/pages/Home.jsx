@@ -26,15 +26,15 @@ export default function Home() {
           />
         </div>
 
-        {/* Mobile-Only Purple Doctor Illustration: Zoomed, centered, and borderless */}
+        {/* Mobile-Only Purple Doctor Illustration: Zoomed slightly out, centered, and borderless */}
         <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden sm:hidden">
           <img
             src="/images/hospital/doctor_illustration_purple_noborder.png"
             alt=""
-            className="w-[125%] max-w-none h-auto object-contain opacity-30 scale-125 filter contrast-110"
+            className="w-[105%] max-w-none h-auto object-contain opacity-28 scale-105 filter contrast-110"
           />
           {/* Radial soft fade to ensure all text, headlines, and buttons pop with crystal clear contrast */}
-          <div className="absolute inset-0 bg-radial from-transparent via-white/40 to-white/90" />
+          <div className="absolute inset-0 bg-radial from-transparent via-white/35 to-white/90" />
         </div>
 
         {/* Hero Content on the Left */}
