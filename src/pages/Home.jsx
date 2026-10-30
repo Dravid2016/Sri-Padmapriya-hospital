@@ -26,27 +26,27 @@ export default function Home() {
           />
         </div>
 
-        {/* Mobile-Only Purple Doctor Illustration: Perfectly centered as a soft watermark background */}
+        {/* Mobile-Only Purple Doctor Illustration: Zoomed, centered, and borderless */}
         <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden sm:hidden">
           <img
-            src="/images/hospital/doctor_illustration_purple.png"
+            src="/images/hospital/doctor_illustration_purple_noborder.png"
             alt=""
-            className="w-full max-w-[340px] xs:max-w-[380px] h-auto object-contain opacity-25 filter contrast-105"
+            className="w-[125%] max-w-none h-auto object-contain opacity-30 scale-125 filter contrast-110"
           />
           {/* Radial soft fade to ensure all text, headlines, and buttons pop with crystal clear contrast */}
-          <div className="absolute inset-0 bg-radial from-transparent via-white/50 to-white/95" />
+          <div className="absolute inset-0 bg-radial from-transparent via-white/40 to-white/90" />
         </div>
 
         {/* Hero Content on the Left */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 w-full">
           <div className="max-w-md sm:max-w-lg text-center sm:text-left mx-auto sm:mx-0 space-y-4">
             
-            {/* Hospital Logo: Visible on mobile screens */}
+            {/* Hospital Logo: Transparent PNG without any white square box/border */}
             <div className="flex items-center justify-center sm:hidden pb-1">
               <img 
-                src="/images/brand/official_hospital_logo.png" 
+                src="/images/brand/official_hospital_logo_transparent.png" 
                 alt="Sri Padmapriya Hospital Pvt. Ltd." 
-                className="h-10 xs:h-12 w-auto object-contain filter drop-shadow-xs"
+                className="h-10 xs:h-12 w-auto object-contain"
               />
             </div>
 
