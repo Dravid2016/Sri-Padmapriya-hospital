@@ -17,17 +17,17 @@ export default function Home() {
       {/* 1. HERO SECTION WITH PURPLE DOCTOR ARTWORK BACKGROUND & CRISP SPLIT VIEW */}
       <section className="relative overflow-hidden border-b border-[#E5E1E7] bg-[#FAF8FB] min-h-[440px] sm:min-h-[500px] lg:min-h-[540px] flex items-center">
         
-        {/* Purple Doctor Artwork Background on the Right */}
-        <div className="absolute inset-y-0 right-0 w-full sm:w-[55%] lg:w-[48%] z-0 pointer-events-none flex items-center justify-end overflow-hidden">
+        {/* Purple Doctor Artwork Background moved further to the right */}
+        <div className="absolute inset-y-0 right-0 w-[80%] sm:w-[50%] lg:w-[44%] xl:w-[40%] z-0 pointer-events-none flex items-center justify-end overflow-hidden">
           <img
             src="/images/hospital/doctor_illustration_purple.png"
             alt="Sri Padmapriya Hospital Medical Specialist Care"
-            className="w-full h-full object-cover object-center sm:object-right opacity-90 sm:opacity-100"
+            className="w-full h-full object-cover object-[right_center] translate-x-4 sm:translate-x-8 lg:translate-x-12 opacity-90 sm:opacity-100"
           />
           {/* Subtle smooth gradient fade on left of the artwork to blend naturally with the text area */}
-          <div className="absolute inset-y-0 left-0 w-32 sm:w-48 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/80 to-transparent hidden sm:block" />
+          <div className="absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/80 to-transparent hidden sm:block" />
           {/* Mobile soft white/lavender tint overlay so left text remains 100% legible */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/90 to-transparent sm:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/85 to-transparent sm:hidden" />
         </div>
 
         {/* Hero Content on the Left */}
