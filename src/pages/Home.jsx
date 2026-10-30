@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-row items-center justify-between gap-4 sm:block">
             
             {/* Left Content */}
-            <div className="max-w-[62%] xs:max-w-[65%] sm:max-w-md lg:max-w-lg text-left space-y-3 sm:space-y-4">
+            <div className="max-w-[56%] xs:max-w-[58%] sm:max-w-md lg:max-w-lg text-left space-y-3 sm:space-y-4">
               <div className="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-[#78266F]">
                 PATIENT-FOCUSED HEALTHCARE IN ADYAR, CHENNAI
               </div>
@@ -66,17 +66,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Mobile Animated Medical Cross Icon */}
-            <div className="sm:hidden flex-1 flex items-center justify-center pl-1">
-              <div className="relative w-28 h-28 xs:w-32 xs:h-32 flex items-center justify-center">
-                {/* Soft ambient pulsing halo behind icon */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#0088cc]/20 via-[#00a8e8]/15 to-[#78266F]/10 blur-xl animate-hero-pulse" />
-                
+            {/* Right Mobile Animated Medical Cross Icon (Cleanly transparent & noticeably bigger) */}
+            <div className="sm:hidden flex-1 flex items-center justify-center pl-2">
+              <div className="relative w-36 h-36 xs:w-44 xs:h-44 flex items-center justify-center">
                 {/* Floating 3D Medical Cross with motion animation */}
                 <img
                   src="/images/hospital/medical_cross_hero.png"
                   alt="Medical Cross Hospital Symbol"
-                  className="relative z-10 w-full h-full object-contain filter drop-shadow-md animate-hero-float"
+                  className="relative z-10 w-full h-full object-contain filter drop-shadow-xl animate-hero-float"
                 />
               </div>
             </div>
