@@ -27,15 +27,24 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#E5E1E7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* DESKTOP HEADER (xl and above): Nav in Center/Left, Book Appointment on Right */}
+        {/* DESKTOP HEADER (xl and above): Logo on Left, Nav in Center, Book Appointment on Right */}
         <div className="hidden xl:flex items-center justify-between h-20">
-          {/* Navigation Links */}
+          {/* Logo on the Left */}
+          <Link to="/" className="flex items-center gap-3 focus:outline-none">
+            <img 
+              src="/images/brand/official_hospital_logo.png" 
+              alt="Sri Padmapriya Hospital Pvt. Ltd. Adyar Chennai" 
+              className="h-11 w-auto object-contain"
+            />
+          </Link>
+
+          {/* Navigation Links in Center */}
           <nav className="flex items-center gap-1" aria-label="Main Navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3.5 py-1.5 text-[14px] font-medium transition-colors ${
+                className={`px-3 py-1.5 text-[13px] font-medium transition-colors ${
                   isActive(link.path)
                     ? 'text-[#78266F] border-b-2 border-[#78266F] font-semibold'
                     : 'text-[#24212A] hover:text-[#78266F]'
@@ -58,7 +67,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* MOBILE & TABLET HEADER (< xl): Menu + Book Appointment */}
+        {/* MOBILE & TABLET HEADER (< xl): Menu + Book Appointment on the Left, Logo on the Right (hidden on mobile, visible on sm/md/lg tablets) */}
         <div className="flex xl:hidden items-center justify-between h-16 sm:h-20">
           {/* Left: Menu Toggle + Book Appointment Button */}
           <div className="flex items-center gap-2 sm:gap-3">
@@ -76,7 +85,19 @@ export default function Header() {
               className="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-md bg-[#78266F] hover:bg-[#621d5a] text-white text-xs sm:text-sm font-semibold transition-colors active:scale-95 shadow-xs"
             >
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
-              <span>Book an Appointment</span>
+              <span className="hidden xs:inline">Book an Appointment</span>
+              <span className="xs:hidden">Book</span>
+            </Link>
+          </div>
+
+          {/* Right: Hospital Logo (Hidden on mobile phones, shown on tablet/desktop) */}
+          <div className="hidden sm:flex items-center">
+            <Link to="/" className="flex items-center focus:outline-none">
+              <img 
+                src="/images/brand/official_hospital_logo.png" 
+                alt="Sri Padmapriya Hospital" 
+                className="h-9 sm:h-10 w-auto object-contain"
+              />
             </Link>
           </div>
         </div>
