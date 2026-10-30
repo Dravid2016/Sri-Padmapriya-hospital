@@ -64,10 +64,33 @@
   border-color: #E5E1E7;
 }
 
-/* Accessible focus outline */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #78266F;
-  outline-offset: 2px;
+/* Floating motion animation for hero medical cross */
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes heroPulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.08);
+  }
+}
+
+.animate-hero-float {
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+.animate-hero-pulse {
+  animation: heroPulseGlow 3.5s ease-in-out infinite;
 }
 
 /* Doctor card shift motion */
