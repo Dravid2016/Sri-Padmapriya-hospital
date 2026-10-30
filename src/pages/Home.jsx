@@ -26,15 +26,15 @@ export default function Home() {
           />
         </div>
 
-        {/* Mobile-Only Purple Doctor Illustration shifted clearly to the Right */}
-        <div className="absolute inset-y-0 right-0 w-[65%] xs:w-[60%] z-0 pointer-events-none flex items-center justify-end overflow-hidden sm:hidden">
+        {/* Mobile-Only Purple Doctor Illustration: Perfectly centered as a soft watermark background */}
+        <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden sm:hidden">
           <img
             src="/images/hospital/doctor_illustration_purple.png"
             alt=""
-            className="w-full h-full object-cover object-left translate-x-6 xs:translate-x-10 opacity-40 filter contrast-105"
+            className="w-full max-w-[340px] xs:max-w-[380px] h-auto object-contain opacity-25 filter contrast-105"
           />
-          {/* Subtle fade on the left edge of the artwork so text has 100% crisp contrast */}
-          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white via-white/80 to-transparent" />
+          {/* Radial soft fade to ensure all text, headlines, and buttons pop with crystal clear contrast */}
+          <div className="absolute inset-0 bg-radial from-transparent via-white/50 to-white/95" />
         </div>
 
         {/* Hero Content on the Left */}
