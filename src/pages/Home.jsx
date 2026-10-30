@@ -30,15 +30,6 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 w-full">
           <div className="max-w-md sm:max-w-lg mx-auto sm:mx-0 text-center sm:text-left space-y-4">
             
-            {/* Hospital Logo Placed on the Home Screen */}
-            <div className="flex items-center justify-center sm:justify-start pb-1">
-              <img 
-                src="/images/brand/official_hospital_logo.png" 
-                alt="Sri Padmapriya Hospital Pvt. Ltd." 
-                className="h-12 sm:h-14 w-auto object-contain filter drop-shadow-xs"
-              />
-            </div>
-
             <div className="text-[11px] font-bold tracking-wider uppercase text-[#78266F]">
               PATIENT-FOCUSED HEALTHCARE IN ADYAR, CHENNAI
             </div>
