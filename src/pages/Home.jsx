@@ -26,6 +26,17 @@ export default function Home() {
           />
         </div>
 
+        {/* Mobile-Only Purple Doctor Illustration shifted clearly to the Right */}
+        <div className="absolute inset-y-0 right-0 w-[65%] xs:w-[60%] z-0 pointer-events-none flex items-center justify-end overflow-hidden sm:hidden">
+          <img
+            src="/images/hospital/doctor_illustration_purple.png"
+            alt=""
+            className="w-full h-full object-cover object-left translate-x-6 xs:translate-x-10 opacity-40 filter contrast-105"
+          />
+          {/* Subtle fade on the left edge of the artwork so text has 100% crisp contrast */}
+          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white via-white/80 to-transparent" />
+        </div>
+
         {/* Hero Content on the Left */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 w-full">
           <div className="max-w-md sm:max-w-lg text-center sm:text-left mx-auto sm:mx-0 space-y-4">
