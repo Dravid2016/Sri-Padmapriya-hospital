@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div className="space-y-12 sm:space-y-16">
       
-      {/* 1. HERO SECTION WITH CLEAN RESPONSIVE LAYOUT & ANIMATED MEDICAL CROSS */}
+      {/* 1. HERO SECTION WITH PURE CLEAN BACKGROUND AND CLEAR DOCTOR-PATIENT SIGHT */}
       <section className="relative overflow-hidden border-b border-[#E5E1E7] bg-white min-h-[380px] sm:min-h-[480px] lg:min-h-[520px] flex items-center">
         
-        {/* Full Image: Hidden on mobile (sm:hidden) so mobile has a pure clean background, visible on tablets/desktops */}
+        {/* Full Image: Hidden on mobile (sm:hidden) so mobile has a pure clean background with no visual clutter, visible on tablets/desktops */}
         <div className="absolute inset-0 z-0 hidden sm:block">
           <img
             src="/images/hospital/hero_consultation_new_bg.png"
@@ -26,56 +26,41 @@ export default function Home() {
           />
         </div>
 
-        {/* Hero Content: On mobile, content is left-aligned with animated cross on the right; on desktop content is left-aligned */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-14 w-full">
-          <div className="flex flex-row items-center justify-between gap-4 sm:block">
+        {/* Hero Content: Centered on mobile view (text-center, mx-auto, justify-center), aligned left on tablet/desktop */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 w-full">
+          <div className="max-w-md sm:max-w-lg mx-auto sm:mx-0 text-center sm:text-left space-y-4">
             
-            {/* Left Content */}
-            <div className="max-w-[56%] xs:max-w-[58%] sm:max-w-md lg:max-w-lg text-left space-y-3 sm:space-y-4">
-              <div className="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-[#78266F]">
-                PATIENT-FOCUSED HEALTHCARE IN ADYAR, CHENNAI
-              </div>
-
-              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#24212A] tracking-tight leading-[1.14]">
-                Compassionate Care. <br />
-                Trusted Expertise. <br />
-                <span className="text-[#78266F]">Better Health.</span>
-              </h1>
-
-              <p className="text-xs sm:text-sm text-[#69636E] leading-relaxed max-w-md">
-                Comprehensive specialist consultations and patient-focused care for you and your family.
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 pt-1">
-                <Link
-                  to="/appointment"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-md bg-[#78266F] hover:bg-[#621d5a] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
-                >
-                  <Calendar className="w-4 h-4 text-white" />
-                  <span>Book an Appointment</span>
-                </Link>
-
-                <Link
-                  to="/doctors"
-                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#155943] hover:text-[#0e4030] transition-colors py-1"
-                >
-                  <span>Explore Our Doctors</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+            <div className="text-[11px] font-bold tracking-wider uppercase text-[#78266F]">
+              PATIENT-FOCUSED HEALTHCARE IN ADYAR, CHENNAI
             </div>
 
-            {/* Right Mobile Animated Medical Cross Icon (Cleanly transparent & noticeably bigger) */}
-            <div className="sm:hidden flex-1 flex items-center justify-center pl-2">
-              <div className="relative w-36 h-36 xs:w-44 xs:h-44 flex items-center justify-center">
-                {/* Floating 3D Medical Cross with motion animation */}
-                <img
-                  src="/images/hospital/medical_cross_hero.png"
-                  alt="Medical Cross Hospital Symbol"
-                  className="relative z-10 w-full h-full object-contain filter drop-shadow-xl animate-hero-float"
-                />
-              </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#24212A] tracking-tight leading-[1.15]">
+              Compassionate Care. <br />
+              Trusted Expertise. <br />
+              <span className="text-[#78266F]">Better Health.</span>
+            </h1>
+
+            <p className="text-xs sm:text-sm text-[#69636E] leading-relaxed max-w-md mx-auto sm:mx-0">
+              Comprehensive specialist consultations and patient-focused care for you and your family.
+            </p>
+
+            {/* CTAs: Centered on mobile, aligned start on sm+ */}
+            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4 pt-1">
+              <Link
+                to="/appointment"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-md bg-[#78266F] hover:bg-[#621d5a] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
+              >
+                <Calendar className="w-4 h-4 text-white" />
+                <span>Book an Appointment</span>
+              </Link>
+
+              <Link
+                to="/doctors"
+                className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-[#155943] hover:text-[#0e4030] transition-colors py-1"
+              >
+                <span>Explore Our Doctors</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
 
           </div>
