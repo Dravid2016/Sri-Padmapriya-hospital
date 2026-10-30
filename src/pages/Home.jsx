@@ -14,24 +14,28 @@ export default function Home() {
   return (
     <div className="space-y-12 sm:space-y-16">
       
-      {/* 1. HERO SECTION WITH PURE CLEAN BACKGROUND AND CLEAR DOCTOR-PATIENT SIGHT */}
-      <section className="relative overflow-hidden border-b border-[#E5E1E7] bg-white min-h-[380px] sm:min-h-[480px] lg:min-h-[520px] flex items-center">
+      {/* 1. HERO SECTION WITH PURPLE DOCTOR ARTWORK BACKGROUND & CRISP SPLIT VIEW */}
+      <section className="relative overflow-hidden border-b border-[#E5E1E7] bg-[#FAF8FB] min-h-[440px] sm:min-h-[500px] lg:min-h-[540px] flex items-center">
         
-        {/* Full Image: Hidden on mobile (sm:hidden) so mobile has a pure clean background with no visual clutter, visible on tablets/desktops */}
-        <div className="absolute inset-0 z-0 hidden sm:block">
+        {/* Purple Doctor Artwork Background on the Right */}
+        <div className="absolute inset-y-0 right-0 w-full sm:w-[55%] lg:w-[48%] z-0 pointer-events-none flex items-center justify-end overflow-hidden">
           <img
-            src="/images/hospital/hero_consultation_new_bg.png"
-            alt="Doctor and patient consultation at Sri Padmapriya Hospital"
-            className="w-full h-full object-cover object-[right_center]"
+            src="/images/hospital/doctor_illustration_purple.png"
+            alt="Sri Padmapriya Hospital Medical Specialist Care"
+            className="w-full h-full object-cover object-center sm:object-right opacity-90 sm:opacity-100"
           />
+          {/* Subtle smooth gradient fade on left of the artwork to blend naturally with the text area */}
+          <div className="absolute inset-y-0 left-0 w-32 sm:w-48 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/80 to-transparent hidden sm:block" />
+          {/* Mobile soft white/lavender tint overlay so left text remains 100% legible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8FB] via-[#FAF8FB]/90 to-transparent sm:hidden" />
         </div>
 
-        {/* Hero Content */}
+        {/* Hero Content on the Left */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 w-full">
-          <div className="max-w-md sm:max-w-lg mx-auto sm:mx-0 text-center sm:text-left space-y-4">
+          <div className="max-w-md sm:max-w-lg text-left space-y-4">
             
-            {/* Hospital Logo: Visible ONLY on mobile screens (hidden on sm/desktop) */}
-            <div className="flex items-center justify-center sm:hidden pb-1">
+            {/* Hospital Logo: Visible on mobile screens */}
+            <div className="flex items-center sm:hidden pb-1">
               <img 
                 src="/images/brand/official_hospital_logo.png" 
                 alt="Sri Padmapriya Hospital Pvt. Ltd." 
@@ -43,18 +47,18 @@ export default function Home() {
               PATIENT-FOCUSED HEALTHCARE IN ADYAR, CHENNAI
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#24212A] tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#24212A] tracking-tight leading-[1.14]">
               Compassionate Care. <br />
               Trusted Expertise. <br />
               <span className="text-[#78266F]">Better Health.</span>
             </h1>
 
-            <p className="text-xs sm:text-sm text-[#69636E] leading-relaxed max-w-md mx-auto sm:mx-0">
+            <p className="text-xs sm:text-sm text-[#69636E] leading-relaxed max-w-md">
               Comprehensive specialist consultations and patient-focused care for you and your family.
             </p>
 
-            {/* CTAs: Centered on mobile, aligned start on sm+ */}
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4 pt-1">
+            {/* CTAs on Left */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 pt-1">
               <Link
                 to="/appointment"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-md bg-[#78266F] hover:bg-[#621d5a] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
@@ -65,7 +69,7 @@ export default function Home() {
 
               <Link
                 to="/doctors"
-                className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-[#155943] hover:text-[#0e4030] transition-colors py-1"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#155943] hover:text-[#0e4030] transition-colors py-1"
               >
                 <span>Explore Our Doctors</span>
                 <ArrowRight className="w-4 h-4" />
