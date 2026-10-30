@@ -68,20 +68,18 @@ export default function Header() {
             </nav>
           </div>
 
-          {/* Right Side: Hospital Logo (Removed on the Home Screen, shown on all other pages) */}
+          {/* Right Side: Hospital Logo (Always visible across all pages) */}
           <div className="flex items-center">
-            {!isHomePage && (
-              <Link to="/" className="flex items-center gap-3 focus:outline-none">
-                <img 
-                  src="/images/brand/official_hospital_logo.png" 
-                  alt="Sri Padmapriya Hospital Pvt. Ltd. Adyar Chennai" 
-                  className="h-9 sm:h-11 w-auto object-contain"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-              </Link>
-            )}
+            <Link to="/" className="flex items-center gap-3 focus:outline-none">
+              <img 
+                src="/images/brand/official_hospital_logo.png" 
+                alt="Sri Padmapriya Hospital Pvt. Ltd. Adyar Chennai" 
+                className="h-9 sm:h-11 w-auto object-contain"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            </Link>
           </div>
 
         </div>
