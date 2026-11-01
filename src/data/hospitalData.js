@@ -72,6 +72,21 @@ export const hospitalInfo = {
 };
 
 /**
+ * Standardized Doctor Specialty Categories for Filtering
+ */
+export const doctorCategories = [
+  "All",
+  "Obstetrics & Gynaecology",
+  "Orthopaedics & Joint Care",
+  "Dermatology",
+  "General Medicine",
+  "General & Laparoscopic Surgery",
+  "ENT, Head & Neck",
+  "Neurology",
+  "Plastic & Cosmetic Surgery"
+];
+
+/**
  * Doctor Directory
  * Clean white-background portraits in 4:5 aspect ratio.
  */
@@ -83,6 +98,7 @@ export const doctorsData = [
     title: "Dean & Senior Gynaecologist",
     qualifications: "MBBS, DGO, MD (OG)",
     speciality: "Obstetrics & Gynaecology, Infertility",
+    category: "Obstetrics & Gynaecology",
     photo: "/images/doctors_clean/dr_k_kanmani_ganesh_white.png",
     cardImage: null,
     registrationNumber: "Pending Verification",
@@ -109,6 +125,7 @@ export const doctorsData = [
     title: "Orthopaedic Consultant Surgeon",
     qualifications: "MBBS, M.S. Ortho",
     speciality: "Orthopaedics & Joint Care",
+    category: "Orthopaedics & Joint Care",
     photo: "/images/doctors_clean/dr_pavithran_white.png",
     cardImage: "/images/cards/dr_pavithran_card.png",
     registrationNumber: "Pending Verification",
@@ -137,6 +154,7 @@ export const doctorsData = [
     title: "Consultant Plastic, Cosmetic & Hair Transplant Surgeon",
     qualifications: "Qualifications to be verified with medical council",
     speciality: "Plastic, Cosmetic & Hair Transplant Surgery",
+    category: "Plastic & Cosmetic Surgery",
     photo: "/images/doctors_clean/dr_shanmuga_prakash_white.png",
     cardImage: null,
     registrationNumber: "Pending Verification",
@@ -163,6 +181,7 @@ export const doctorsData = [
     title: "Consultant Neurology & Neurointervention",
     qualifications: "MBBS, MD, DM, FNB",
     speciality: "Neurology & Neurointervention",
+    category: "Neurology",
     photo: "/images/doctors_clean/dr_sai_prashanth_white.png",
     cardImage: null,
     registrationNumber: "107903",
@@ -190,6 +209,7 @@ export const doctorsData = [
     title: "Consultant ENT, Head & Neck Surgery",
     qualifications: "MBBS, MS (ENT)",
     speciality: "ENT, Head & Neck Surgery",
+    category: "ENT, Head & Neck",
     photo: "/images/doctors_clean/dr_m_sivagamasundari_white.png",
     cardImage: "/images/cards/dr_m_sivagamasundari_card.png",
     registrationNumber: "104219",
@@ -217,6 +237,7 @@ export const doctorsData = [
     title: "General & Laparoscopic Surgeon",
     qualifications: "MBBS, DIP (DIAB), MS, FMAAS, (MMC) FALS",
     speciality: "General & Laparoscopic Surgery | Diabetic & Wound Care",
+    category: "General & Laparoscopic Surgery",
     photo: "/images/doctors_clean/dr_g_rangarajan_white.png",
     cardImage: "/images/cards/dr_g_rangarajan_card.png",
     registrationNumber: "75994",
@@ -243,6 +264,7 @@ export const doctorsData = [
     title: "Consultant Surgical Gastroenterologist (Pending confirmation)",
     qualifications: "MS, FMAS, M.Ch. (SGE)",
     speciality: "Surgical Gastroenterology / GI Surgery",
+    category: "General & Laparoscopic Surgery",
     photo: "/images/doctors_clean/dr_s_selva_sankar_white.png",
     cardImage: null,
     registrationNumber: "Pending Verification",
@@ -269,6 +291,7 @@ export const doctorsData = [
     title: "Professor of Dermatology (Retd.)",
     qualifications: "M.D. (Derm), D.D.",
     speciality: "Dermatology & Venereology",
+    category: "Dermatology",
     photo: "/images/doctors_clean/dr_hameedullah_white.png",
     cardImage: null,
     registrationNumber: "Verified (Retd. Prof)",
@@ -296,6 +319,7 @@ export const doctorsData = [
     title: "Consultant Physician",
     qualifications: "MBBS, MD",
     speciality: "General & Family Medicine",
+    category: "General Medicine",
     photo: "/images/doctors_clean/dr_s_v_sangeetha_white.png",
     cardImage: null,
     registrationNumber: "81461",
@@ -322,6 +346,7 @@ export const doctorsData = [
     title: "Senior Consultant Orthopaedic Surgeon",
     qualifications: "MBBS, MS, DNB (Orthopaedics)",
     speciality: "Orthopaedics, Joint Replacement & Spine Surgery",
+    category: "Orthopaedics & Joint Care",
     photo: "/images/doctors_clean/dr_vijayanarasimma_reddy_white.png",
     cardImage: null,
     registrationNumber: "Verified Consultant",
@@ -350,6 +375,7 @@ export const doctorsData = [
     title: "Assistant Professor & Consultant ENT, Head and Neck Surgeon",
     qualifications: "MBBS, MS (ENT)",
     speciality: "ENT, Head and Neck Surgery",
+    category: "ENT, Head & Neck",
     photo: "/images/doctors_clean/dr_k_gowthame_white.png",
     cardImage: "/images/cards/dr_k_gowthame_card.jpg",
     registrationNumber: "Verified Faculty",
@@ -376,6 +402,7 @@ export const doctorsData = [
     title: "Critical Care Consultant",
     qualifications: "Qualifications Pending Verification",
     speciality: "Critical Care & Intensive Medicine",
+    category: "Critical Care",
     photo: null,
     cardImage: null,
     registrationNumber: "Pending Verification",
