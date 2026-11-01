@@ -65,6 +65,10 @@ export default function GradientCarousel({
     { primary: '#482047', secondary: '#FAF9FB', accent: '#78266F' }, // Dr. Sivagamasundari
     { primary: '#155943', secondary: '#FAF9FB', accent: '#0e4030' }, // Dr. Rangarajan
     { primary: '#78266F', secondary: '#FAF9FB', accent: '#482047' }, // Dr. Selva Sankar
+    { primary: '#155943', secondary: '#FAF9FB', accent: '#0e4030' }, // Dr. Hameedullah
+    { primary: '#78266F', secondary: '#FAF9FB', accent: '#8b2e81' }, // Dr. S.V. Sangeetha
+    { primary: '#155943', secondary: '#FAF9FB', accent: '#1c7256' }, // Dr. Vijayanarasimma Reddy
+    { primary: '#78266F', secondary: '#FAF9FB', accent: '#482047' }, // Dr. K. Gowthame
   ];
 
   const currentTheme = doctorGradients[((activeIndex % doctorGradients.length) + doctorGradients.length) % doctorGradients.length] || doctorGradients[0];
