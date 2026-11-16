@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
 import { hospitalInfo } from '../data/hospitalData';
+import SEOHead from '../components/SEOHead';
 
 export default function About() {
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <SEOHead
+        title="About Us | Sri Padmapriya Hospital, Adyar, Chennai"
+        description="Established in 2001 in Indira Nagar, Adyar, Chennai, Sri Padmapriya Hospital provides dedicated outpatient specialist consultations, diagnostic services, and focused inpatient clinical care."
+        canonicalPath="/about"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">

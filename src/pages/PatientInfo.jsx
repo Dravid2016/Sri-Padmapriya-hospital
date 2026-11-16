@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, FileText, Phone, Check } from 'lucide-react';
 import { hospitalInfo } from '../data/hospitalData';
+import SEOHead from '../components/SEOHead';
 
 export default function PatientInfo() {
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <SEOHead
+        title="Patient Care Guidelines & Visitor Info | Padmapriya Hospital Adyar"
+        description="Patient guidelines for OPD visits, admission process, visitor hours, and diagnostic protocols at Sri Padmapriya Hospital, Indira Nagar, Adyar, Chennai."
+        canonicalPath="/patient-info"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">

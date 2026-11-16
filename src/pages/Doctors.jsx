@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Search, Filter, X, Check, ArrowRight, UserCheck } from 'lucide-react';
 import { doctorsData, doctorCategories } from '../data/hospitalData';
 import DoctorCard from '../components/DoctorCard';
+import SEOHead from '../components/SEOHead';
 
 export default function Doctors() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -45,6 +46,11 @@ export default function Doctors() {
 
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <SEOHead
+        title="Consultant Doctors in Adyar | Specialist OPD Schedules & Booking"
+        description="Consult senior doctors and professors in Adyar, Chennai across 9 specialties at Padmapriya Hospital. Verified OPD schedules, consultation fees, and appointment booking."
+        canonicalPath="/doctors"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">

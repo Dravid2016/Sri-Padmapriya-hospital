@@ -5,6 +5,8 @@ import { hospitalInfo, doctorsData, clinicalSpecialties } from '../data/hospital
 import DoctorCard from '../components/DoctorCard';
 import GradientCarousel from '../components/GradientCarousel';
 import { SpecialtyIcon } from '../components/SpecialtyIcon';
+import SEOHead from '../components/SEOHead';
+import { trackCallClick, trackDirectionsClick } from '../utils/analytics';
 
 export default function Home() {
   const [viewMode, setViewMode] = useState('carousel'); // 'carousel' | 'grid'
@@ -13,6 +15,11 @@ export default function Home() {
 
   return (
     <div className="space-y-12 sm:space-y-16">
+      <SEOHead
+        title="Padmapriya Hospital Adyar | Multispeciality Care Chennai"
+        description="Trusted hospital in Indira Nagar, Adyar, Chennai since 2001. Expert consultations in Gynaecology, Surgery, Orthopaedics, Neurology & Diagnostics. Call 044-24451252."
+        canonicalPath="/"
+      />
       
       {/* 1. HERO SECTION WITH PURE CLEAN BACKGROUND AND CLEAR DOCTOR-PATIENT SIGHT */}
       <section className="relative overflow-hidden border-b border-[#E5E1E7] bg-white min-h-[420px] sm:min-h-[480px] lg:min-h-[520px] flex items-center">

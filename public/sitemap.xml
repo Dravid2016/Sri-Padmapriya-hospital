@@ -1,84 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Static & Service Routes -->
   <url>
-    <loc>https://sripadmapriyahospital.com/</loc>
+    <loc>https://padmapriyahospital.com/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/about</loc>
+    <loc>https://padmapriyahospital.com/about</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/doctors</loc>
+    <loc>https://padmapriyahospital.com/doctors</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-k-kanmani-ganesh</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-pavithran</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-shanmuga-prakash-r</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-sai-prashanth-pr</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-m-sivagamasundari</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-s-selva-sankar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/doctors/dr-g-rangarajan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/specialities</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/facilities</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sripadmapriyahospital.com/appointment</loc>
+    <loc>https://padmapriyahospital.com/specialities</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/contact</loc>
+    <loc>https://padmapriyahospital.com/facilities</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://padmapriyahospital.com/patient-info</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sripadmapriyahospital.com/terms</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://padmapriyahospital.com/appointment</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/contact</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Approved Doctor Profiles -->
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-k-kanmani-ganesh</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-pavithran</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-shanmuga-prakash-r</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-sai-prashanth-pr</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-m-sivagamasundari</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-g-rangarajan</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-s-selva-sankar</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-hameedullah</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-s-v-sangeetha</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-vijayanarasimma-reddy</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-k-gowthame</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-g-venkatesan</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://padmapriyahospital.com/doctors/dr-r-selvaraj</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
-

@@ -4,21 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Padmapriya Hospital Pvt. Ltd. | Adyar, Chennai</title>
-    <meta name="description" content="Official website of Sri Padmapriya Hospital Pvt. Ltd., Adyar, Chennai. Providing compassionate, patient-centered specialist consultations, diagnostic services, and focused clinical care." />
+    <meta name="description" content="Official website of Sri Padmapriya Hospital Pvt. Ltd., Adyar, Chennai. Providing compassionate, patient-centered specialist consultations, diagnostic services, and focused clinical care since 2001." />
     
+    <!-- Canonical URL Baseline -->
+    <link rel="canonical" href="https://padmapriyahospital.com/" />
+
     <!-- Open Graph / Meta -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sri Padmapriya Hospital" />
     <meta property="og:title" content="Sri Padmapriya Hospital Pvt. Ltd. | Adyar, Chennai" />
-    <meta property="og:description" content="Compassionate Care. Trusted Expertise. Better Health. Official hospital web portal, consultant schedules, facilities, and appointment enquiries." />
-    <meta property="og:image" content="/images/brand/official_hospital_logo.png" />
+    <meta property="og:description" content="Compassionate Care. Trusted Expertise. Better Health. Specialist OPD consultations, surgical procedures, ICU, and diagnostics in Indira Nagar, Adyar." />
+    <meta property="og:image" content="https://padmapriyahospital.com/images/brand/official_hospital_logo.png" />
+    <meta property="og:url" content="https://padmapriyahospital.com/" />
     
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sri Padmapriya Hospital Pvt. Ltd. | Adyar, Chennai" />
+    <meta name="twitter:description" content="Trusted multispeciality healthcare and senior consultant consultations in Indira Nagar, Adyar, Chennai." />
+    <meta name="twitter:image" content="https://padmapriyahospital.com/images/brand/official_hospital_logo.png" />
+
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <!-- Professional Clean Standard Typography (Inter) -->
+    
+    <!-- Preconnect for Performance & Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Global Hospital & MedicalOrganization Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Hospital", "MedicalOrganization", "LocalBusiness"],
+          "@id": "https://padmapriyahospital.com/#hospital",
+          "name": "Sri Padmapriya Hospital Pvt. Ltd.",
+          "alternateName": ["Padmapriya Hospital", "Padmapriya Hospital Adyar"],
+          "url": "https://padmapriyahospital.com",
+          "logo": "https://padmapriyahospital.com/images/brand/official_hospital_logo.png",
+          "image": "https://padmapriyahospital.com/images/hospital/hospital_exterior.png",
+          "foundingDate": "2001",
+          "telephone": "+91-44-24451252",
+          "email": "info@sripadmapriyahospital.com",
+          "priceRange": "₹₹",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1st Avenue, Indira Nagar",
+            "addressLocality": "Adyar",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600020",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9996252,
+            "longitude": 80.2536985
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59",
+              "description": "Hospital Inpatient & Emergency Reception"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "20:00",
+              "description": "Specialist Outpatient Consultations"
+            }
+          ],
+          "hasMap": "https://www.google.com/maps/place/Sri+Padmapriya+Hospital/@12.9996252,80.2536985,17z/",
+          "medicalSpecialty": [
+            "https://schema.org/Obstetric",
+            "https://schema.org/Gynecologic",
+            "https://schema.org/Surgical",
+            "https://schema.org/Neurologic",
+            "https://schema.org/Dermatologic",
+            "https://schema.org/Otolaryngologic"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://padmapriyahospital.com/#website",
+          "url": "https://padmapriyahospital.com",
+          "name": "Sri Padmapriya Hospital",
+          "publisher": {
+            "@id": "https://padmapriyahospital.com/#hospital"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-white text-[#24212A] antialiased selection:bg-[#78266F] selection:text-white font-sans">
     <div id="root"></div>

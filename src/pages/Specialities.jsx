@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Check } from 'lucide-react';
 import { clinicalSpecialties } from '../data/hospitalData';
 import { SpecialtyIcon } from '../components/SpecialtyIcon';
+import SEOHead from '../components/SEOHead';
 
 export default function Specialities() {
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <SEOHead
+        title="Medical Specialties & Clinical Departments in Adyar | Padmapriya Hospital"
+        description="Comprehensive healthcare specialties in Adyar, Chennai: Obstetrics & Gynaecology, General & Laparoscopic Surgery, Orthopaedics, Neurology, ENT, Dermatology, and Pulmonology."
+        canonicalPath="/specialities"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">

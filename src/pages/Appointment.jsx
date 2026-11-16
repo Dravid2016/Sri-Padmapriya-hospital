@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Phone, Clock, MapPin, Check } from 'lucide-react';
 import { hospitalInfo } from '../data/hospitalData';
 import AppointmentForm from '../components/AppointmentForm';
+import SEOHead from '../components/SEOHead';
 
 export default function Appointment() {
   const [searchParams] = useSearchParams();
@@ -10,6 +11,11 @@ export default function Appointment() {
 
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <SEOHead
+        title="Book Doctor Appointment Online | Padmapriya Hospital Adyar"
+        description="Book your specialist doctor consultation at Sri Padmapriya Hospital, Indira Nagar, Adyar, Chennai. Fast online token booking and front desk telephone assistance."
+        canonicalPath="/appointment"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">

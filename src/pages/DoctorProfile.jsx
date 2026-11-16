@@ -1,19 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Check } from 'lucide-react';
 import { doctorsData } from '../data/hospitalData';
 import AppointmentForm from '../components/AppointmentForm';
+import SEOHead from '../components/SEOHead';
+import { trackDoctorProfileView } from '../utils/analytics';
 
 export default function DoctorProfile() {
   const { slug } = useParams();
   const doctor = doctorsData.find(d => d.slug === slug);
 
+  useEffect(() => {
+    if (doctor) {
+      trackDoctorProfileView(doctor.name, doctor.slug, doctor.speciality);
+    }
+  }, [doctor]);
+
   if (!doctor) {
     return <Navigate to="/doctors" replace />;
   }
 
+  // Physician Schema.org JSON-LD structured data
+  const physicianSchema = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": doctor.name,
+    "jobTitle": doctor.title,
+    "description": doctor.experienceSummary || `${doctor.title} specializing in ${doctor.speciality} at Sri Padmapriya Hospital Adyar.`,
+    "url": `https://padmapriyahospital.com/doctors/${doctor.slug}`,
+    "image": doctor.photo ? `https://padmapriyahospital.com${doctor.photo}` : undefined,
+    "medicalSpecialty": doctor.speciality,
+    "worksFor": {
+      "@type": "Hospital",
+      "name": "Sri Padmapriya Hospital Pvt. Ltd.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1st Avenue, Indira Nagar",
+        "addressLocality": "Adyar",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600020",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-44-24451252"
+    }
+  };
+
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <SEOHead
+        title={`${doctor.name} - ${doctor.title} | Adyar, Chennai`}
+        description={`Consult ${doctor.name} (${doctor.qualifications}), ${doctor.title} specializing in ${doctor.speciality} at Padmapriya Hospital, Adyar, Chennai. Timings: ${doctor.schedule}.`}
+        canonicalPath={`/doctors/${doctor.slug}`}
+        ogImage={doctor.photo || '/images/brand/official_hospital_logo.png'}
+        ogType="profile"
+        schemaJson={physicianSchema}
+      />
       
       {/* Breadcrumb */}
       <div>

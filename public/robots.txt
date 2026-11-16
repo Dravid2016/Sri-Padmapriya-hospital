@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sripadmapriyahospital.com/sitemap.xml
+# Disallow build and dev internal assets from crawlers
+Disallow: /dist/
+Disallow: /node_modules/
 
+# Canonical Sitemap URL
+Sitemap: https://padmapriyahospital.com/sitemap.xml

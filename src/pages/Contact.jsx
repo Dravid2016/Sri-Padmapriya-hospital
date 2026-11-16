@@ -2,10 +2,16 @@ import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { hospitalInfo } from '../data/hospitalData';
+import SEOHead from '../components/SEOHead';
 
 export default function Contact() {
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <SEOHead
+        title="Contact & Location Directions | Padmapriya Hospital Adyar, Chennai"
+        description="Visit Sri Padmapriya Hospital at 1st Avenue, Indira Nagar, Adyar, Chennai - 600020. Phone: 044-24451252. Rapid access from Besant Nagar, Thiruvanmiyur, and Kotturpuram."
+        canonicalPath="/contact"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">

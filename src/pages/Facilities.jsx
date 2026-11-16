@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, Check } from 'lucide-react';
 import { hospitalFacilitiesList } from '../data/hospitalData';
+import SEOHead from '../components/SEOHead';
 
 export default function Facilities() {
   return (
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <SEOHead
+        title="Hospital Facilities & Diagnostic Services | Padmapriya Hospital Adyar"
+        description="Modern clinical infrastructure at Padmapriya Hospital, Adyar: Operation Theatres, Intensive Care Unit (ICU), Ultrasound, Digital X-Ray, Clinical Pathology, and Inpatient Deluxe Rooms."
+        canonicalPath="/facilities"
+      />
       
       {/* Header */}
       <div className="border-b border-[#E5E1E7] pb-6">
