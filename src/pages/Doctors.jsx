@@ -216,42 +216,6 @@ export default function Doctors() {
         </div>
       )}
 
-      {/* Visiting Cards Reference Section */}
-      <div className="bg-[#FAF9FB] rounded-2xl border border-[#E5E1E7] p-6 sm:p-8 space-y-4">
-        <div>
-          <span className="text-[11px] font-bold uppercase tracking-wider text-[#155943]">
-            PRIMARY SOURCE VERIFICATION
-          </span>
-          <h2 className="text-lg font-bold text-[#24212A] mt-0.5">
-            Verified Doctor Visiting Cards & Credentials
-          </h2>
-          <p className="text-xs text-[#69636E] mt-1">
-            Doctor degrees, academic appointments, and medical council credentials are confirmed against primary verified client visiting cards.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-2">
-          {doctorsData.filter(d => d.cardImage).map((doc) => (
-            <div key={doc.id} className="bg-white rounded-xl border border-[#E5E1E7] p-3 space-y-2">
-              <div className="aspect-16/10 rounded-lg overflow-hidden border border-[#E5E1E7] bg-white flex items-center justify-center p-1">
-                <img
-                  src={doc.cardImage}
-                  alt={`${doc.name} visiting card credential`}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="text-xs">
-                <p className="font-bold text-[#24212A]">{doc.name}</p>
-                <p className="text-[11px] text-[#69636E]">{doc.qualifications}</p>
-                <p className="text-[10px] text-[#155943] font-semibold mt-1">
-                  Reg No: {doc.registrationNumber}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
     </div>
   );
 }
