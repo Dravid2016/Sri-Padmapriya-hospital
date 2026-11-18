@@ -100,6 +100,14 @@ export default function Footer() {
             </h4>
             
             <div className="space-y-2.5 text-xs text-[#E5D7E4]">
+              <div className="flex items-center gap-2 text-rose-300 font-bold">
+                <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+                <span>24/7 Emergency:</span>
+                <a href={`tel:${hospitalInfo.contact.emergencyNumberRaw}`} className="text-white hover:text-rose-200 font-mono">
+                  {hospitalInfo.contact.emergencyContact}
+                </a>
+              </div>
+
               <div className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#87D4B6] shrink-0 mt-0.5" />
                 <span>

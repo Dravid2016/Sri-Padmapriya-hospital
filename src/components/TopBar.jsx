@@ -9,6 +9,15 @@ export default function TopBar() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-2">
         {/* Contact numbers */}
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+          {/* Emergency Helpline 24/7 */}
+          <div className="flex items-center gap-1.5 bg-rose-950/70 text-rose-200 px-2.5 py-0.5 rounded-full border border-rose-500/40">
+            <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-rose-300">Emergency:</span>
+            <a href={`tel:${hospitalInfo.contact.emergencyNumberRaw}`} className="font-bold text-white hover:text-rose-200 transition-colors">
+              {hospitalInfo.contact.emergencyContact}
+            </a>
+          </div>
+
           <div className="flex items-center gap-1.5 text-purple-100">
             <Phone className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
             <span className="text-xs text-purple-200">Reception:</span>

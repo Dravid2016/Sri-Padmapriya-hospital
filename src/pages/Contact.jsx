@@ -27,8 +27,26 @@ export default function Contact() {
       </div>
 
       {/* Contact Cards Row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         
+        {/* 24/7 Emergency Card */}
+        <div className="bg-rose-50 rounded-md border border-rose-200 p-5 space-y-2 relative overflow-hidden">
+          <div className="flex items-center justify-between">
+            <div className="w-8 h-8 rounded-md bg-rose-600 text-white flex items-center justify-center shadow-xs">
+              <Phone className="w-4 h-4" />
+            </div>
+            <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
+              24/7 Service
+            </span>
+          </div>
+          <h3 className="text-xs font-bold uppercase tracking-wider text-rose-900">Emergency Helpline</h3>
+          <p className="text-xs text-rose-800">Casualty & Urgent Care</p>
+          <a href={`tel:${hospitalInfo.contact.emergencyNumberRaw}`} className="block text-sm font-bold text-rose-700 font-mono hover:underline">
+            {hospitalInfo.contact.emergencyContact}
+          </a>
+        </div>
+
         <div className="bg-white rounded-md border border-[#E5E1E7] p-5 space-y-2">
           <div className="w-8 h-8 rounded-md bg-[#FAF9FB] border border-[#E5E1E7] flex items-center justify-center text-[#78266F]">
             <Phone className="w-4 h-4" />

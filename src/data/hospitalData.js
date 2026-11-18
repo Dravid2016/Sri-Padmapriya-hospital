@@ -25,6 +25,8 @@ export const hospitalInfo = {
     googleMapsUrl: "https://www.google.com/maps/place/Sri+Padmapriya+Hospital/@12.9996252,80.2536985,17z/",
   },
   contact: {
+    emergencyContact: "+91 63819 07621",
+    emergencyNumberRaw: "6381907621",
     receptionLandline: "044-24451252",
     additionalLandlines: ["044-24450878", "044-24420091"],
     enquiryMobile: "+91 94442 00270",
