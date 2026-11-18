@@ -185,7 +185,7 @@ export default function Home() {
               </h2>
 
               <p className="text-xs sm:text-sm text-[#69636E] leading-relaxed">
-                Sri Padmapriya Hospital Pvt. Ltd. is a modern multi-speciality medical facility located in Indira Nagar, Adyar. Equipped with private consultant suites, an on-site dispensary (S.P. Medicals), pathology diagnostics, ultrasound imaging, and complete inpatient recovery wards.
+                Sri Padmapriya Hospital Pvt. Ltd. is a modern multi-speciality medical facility located in Indira Nagar, Adyar. Equipped with private consultant suites, an on-site dispensary (G K Medicals), pathology diagnostics, ultrasound imaging, and complete inpatient recovery wards.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-[#24212A]">
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-[#155943] shrink-0" />
-                  <span>On-site Pharmacy (S.P. Medicals)</span>
+                  <span>On-site Pharmacy (G K Medicals)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-[#155943] shrink-0" />
@@ -231,7 +231,7 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden border border-[#E5E1E7] shadow-sm bg-white">
                 <img
                   src="/images/hospital/sri_padmapriya_hospital_building_facade.jpg"
-                  alt="Sri Padmapriya Hospital Main Facade and S.P. Medicals in Adyar, Chennai"
+                  alt="Sri Padmapriya Hospital Main Facade and G K Medicals in Adyar, Chennai"
                   className="w-full h-auto object-cover max-h-[360px]"
                 />
                 <div className="p-3 bg-white text-[#69636E] text-[11px] flex items-center justify-between border-t border-[#E5E1E7]">
