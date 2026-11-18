@@ -26,11 +26,18 @@ export default function Home() {
         
         {/* Desktop & Tablet Consultation Banner Background on the Right */}
         <div className="absolute inset-0 z-0 hidden sm:block">
-          <img
-            src="/images/hospital/hero_consultation_new_bg.png"
-            alt="Doctor and patient consultation at Sri Padmapriya Hospital"
-            className="w-full h-full object-cover object-[right_center]"
-          />
+          <picture>
+            <source srcSet="/images/hospital/hero_consultation_new_bg.webp" type="image/webp" />
+            <img
+              src="/images/hospital/hero_consultation_new_bg.png"
+              alt="Doctor and patient consultation at Sri Padmapriya Hospital"
+              className="w-full h-full object-cover object-[right_center] select-none pointer-events-none"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </picture>
+          {/* Subtle gradient to seamlessly melt the image edge into the clean white text area on ultra-wide screens */}
+          <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none" />
         </div>
 
         {/* Mobile-Only Purple Doctor Illustration: Zoomed slightly out, centered, and borderless */}
