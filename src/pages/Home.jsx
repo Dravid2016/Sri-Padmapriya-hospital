@@ -36,8 +36,6 @@ export default function Home() {
               fetchpriority="high"
             />
           </picture>
-          {/* Enhanced seamless left-to-right fade overlay guarantees zero line/seam across all display widths */}
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-white via-white/80 via-45% to-transparent to-70%" />
         </div>
 
         {/* Mobile-Only Purple Doctor Illustration: Zoomed slightly out, centered, and borderless */}
