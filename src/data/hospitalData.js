@@ -29,7 +29,8 @@ export const hospitalInfo = {
     emergencyNumberRaw: "6381907621",
     receptionLandline: "044-24451252",
     additionalLandlines: ["044-24450878", "044-24420091"],
-    enquiryMobile: "+91 94442 00270",
+    enquiryMobile: "+91 73395 57417",
+    enquiryMobileRaw: "7339557417",
     generalEnquiryMobileAlternative: "+91 97402 54158",
     email: "info@sripadmapriyahospital.com",
     instagram: {
