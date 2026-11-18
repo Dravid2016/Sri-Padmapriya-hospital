@@ -37,6 +37,8 @@ export const hospitalInfo = {
   },
   hours: {
     hospitalReception: "Open Daily (Administrative & Inpatient Reception)",
+    emergencyServices: "24/7 Emergency & Operation Theatre Support",
+    operationTheatre: "24/7 Operations & Surgical Emergency Coverage",
     opdConsultations: "9:00 AM – 8:00 PM (By Appointment & Specialist Schedule)",
     pharmacy: "Open Daily (Hospital Dispensary)",
     diagnostics: "7:30 AM – 7:30 PM (Lab & Imaging Services)"
@@ -106,9 +108,9 @@ export const doctorsData = [
     isRegistrationVerified: false,
     opdFee: "₹700",
     isFeeVerified: false,
-    schedule: "Mon – Sat: 10:00 AM – 7:00 PM (By Appointment)",
-    isScheduleVerified: false,
-    availabilityType: "Regular OPD",
+    schedule: "Evening: 5:00 PM – 7:30 PM (Mon – Sat, By Appointment)",
+    isScheduleVerified: true,
+    availabilityType: "Evening OPD (5:00 PM – 7:30 PM)",
     experienceSummary: "Dean and Senior Gynaecologist with extensive experience in women's health, pregnancy care, gynaecological procedures, and reproductive wellness.",
     specialInterests: [
       "High-Risk Obstetrics & Antenatal Care",
@@ -117,7 +119,7 @@ export const doctorsData = [
       "Well-Woman Health & Colposcopy"
     ],
     rosterApproved: true,
-    verificationNotes: "Senior specialist listed in hospital background introduction. Timings and consultation fee (₹700) require formal client verification."
+    verificationNotes: "Verified: Consultation timing 5:00 PM to 7:30 PM (Evening, Mon – Sat, by appointment). Operation theatre available 24/7."
   },
   {
     id: "dr-pavithran",
@@ -567,7 +569,7 @@ export const hospitalFacilitiesList = [
   {
     category: "Inpatient & Critical Care Infrastructure",
     items: [
-      "Operation Theatre Complex equipped for general & laparoscopic procedures",
+      "24/7 Operation Theatre Complex equipped for general, gynaecological & laparoscopic emergency surgeries",
       "Intensive Care Unit (ICU) with physiological monitoring support",
       "Single Deluxe Inpatient Rooms & Standard Recovery Suites",
       "Twin-Sharing Patient Accommodations",

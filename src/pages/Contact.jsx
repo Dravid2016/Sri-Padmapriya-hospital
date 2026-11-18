@@ -56,8 +56,11 @@ export default function Contact() {
             <Clock className="w-4 h-4" />
           </div>
           <h3 className="text-xs font-bold uppercase tracking-wider text-[#24212A]">Hours of Operation</h3>
-          <p className="text-xs text-[#69636E]">Reception: Open Daily</p>
+          <p className="text-xs text-[#69636E]">Reception & Emergency: Open 24/7</p>
           <span className="block text-xs font-semibold text-[#24212A]">
+            Operations: 24/7 Surgical Support
+          </span>
+          <span className="block text-[11px] text-[#69636E]">
             OPD: 9:00 AM – 8:00 PM
           </span>
         </div>

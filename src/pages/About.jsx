@@ -75,7 +75,7 @@ export default function About() {
           </div>
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4 text-[#155943] shrink-0" />
-            <span>Operation theatre complex for general and laparoscopic surgeries</span>
+            <span>24/7 Operation theatre complex for general, gynaecological & emergency surgeries</span>
           </div>
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4 text-[#155943] shrink-0" />
