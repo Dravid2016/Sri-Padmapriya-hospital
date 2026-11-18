@@ -105,7 +105,7 @@ export const doctorsData = [
     id: "dr-k-kanmani-ganesh",
     slug: "dr-k-kanmani-ganesh",
     name: "Dr. K. Kanmani Ganesh",
-    title: "Dean & Senior Gynaecologist",
+    title: "Chief Doctor & Senior Consultant Gynaecologist",
     qualifications: "MBBS, DGO, MD (OG)",
     speciality: "Obstetrics & Gynaecology, Infertility",
     category: "Obstetrics & Gynaecology",
@@ -118,7 +118,7 @@ export const doctorsData = [
     schedule: "Evening: 5:00 PM – 7:30 PM (Mon – Sat, By Appointment)",
     isScheduleVerified: true,
     availabilityType: "Evening OPD (5:00 PM – 7:30 PM)",
-    experienceSummary: "Dean and Senior Gynaecologist with extensive experience in women's health, pregnancy care, gynaecological procedures, and reproductive wellness.",
+    experienceSummary: "Chief Doctor and Senior Consultant Gynaecologist with extensive clinical and surgical leadership in women's health, high-risk obstetrics, infertility evaluation, and reproductive wellness at Sri Padmapriya Hospital.",
     specialInterests: [
       "High-Risk Obstetrics & Antenatal Care",
       "Gynaecological Health & Preventative Screening",
@@ -126,7 +126,7 @@ export const doctorsData = [
       "Well-Woman Health & Colposcopy"
     ],
     rosterApproved: true,
-    verificationNotes: "Verified: Consultation timing 5:00 PM to 7:30 PM (Evening, Mon – Sat, by appointment). Operation theatre available 24/7."
+    verificationNotes: "Chief Doctor. Consultation timing 5:00 PM to 7:30 PM (Evening, Mon – Sat, by appointment). Operation theatre available 24/7."
   },
   {
     id: "dr-pavithran",
