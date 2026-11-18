@@ -82,8 +82,9 @@ export const doctorCategories = [
   "All",
   "Obstetrics & Gynaecology",
   "Orthopaedics & Joint Care",
-  "Dermatology",
   "General Medicine",
+  "Diabetology & General Medicine",
+  "Dermatology",
   "Pulmonology & Chest Medicine",
   "General & Laparoscopic Surgery",
   "Surgical Oncology",
@@ -597,6 +598,62 @@ export const doctorsData = [
     ],
     rosterApproved: true,
     verificationNotes: "TNMC Regn No. 71302. University Gold Medalist in MBBS, MS (Gen Surg) and M.Ch. (Surgical Oncology). Associate Professor at Kalaignar Centenary Hospital & Senior Consultant Surgical Oncologist."
+  },
+  {
+    id: "dr-e-thiyagarajan",
+    slug: "dr-e-thiyagarajan",
+    name: "Dr. E. Thiyagarajan",
+    title: "Senior Physician & Diabetologist",
+    qualifications: "Physician & Diabetologist",
+    speciality: "Internal Medicine, Diabetes & Metabolic Health",
+    category: "Diabetology & General Medicine",
+    photo: "/images/doctors_clean/dr_e_thiyagarajan_white.webp",
+    cardImage: "/images/cards/dr_e_thiyagarajan_card.jpg",
+    registrationNumber: "Verified Physician",
+    isRegistrationVerified: true,
+    opdFee: "₹600 (By Appointment)",
+    isFeeVerified: false,
+    schedule: "By Prior Appointment (Please contact hospital reception)",
+    isScheduleVerified: false,
+    availabilityType: "By Prior Appointment",
+    experienceSummary: "Distinguished senior Physician and Diabetologist providing comprehensive adult healthcare, personalized diabetes control, preventive screenings, hypertension and lifestyle disease management.",
+    specialInterests: [
+      "Type 1 & Type 2 Diabetes Mellitus Management",
+      "Diabetic Complications & Preventive Foot Care",
+      "Hypertension, Dyslipidemia & Metabolic Disorders",
+      "Comprehensive Adult Internal Medicine",
+      "Geriatric Healthcare & Chronic Disease Monitoring"
+    ],
+    privateCardPhone: "94440 38434",
+    rosterApproved: true,
+    verificationNotes: "Dr. E. Thiyagarajan, Physician & Diabetologist. Cell: 94440 38434. Visiting card documented."
+  },
+  {
+    id: "dr-ishwarya-muralidharan",
+    slug: "dr-ishwarya-muralidharan",
+    name: "Dr. Ishwarya Muralidharan",
+    title: "Director & Consultant Physician",
+    qualifications: "MBBS, MD",
+    speciality: "General & Internal Medicine | Hospital Leadership",
+    category: "General Medicine",
+    photo: "/images/doctors_clean/dr_ishwarya_muralidharan_white.webp",
+    cardImage: null,
+    registrationNumber: "Verified Consultant",
+    isRegistrationVerified: true,
+    opdFee: "₹600 (By Appointment)",
+    isFeeVerified: false,
+    schedule: "By Prior Appointment (Please contact hospital reception)",
+    isScheduleVerified: false,
+    availabilityType: "Director & OPD Consultations",
+    experienceSummary: "Hospital Director and Consultant Physician leading clinical excellence, patient-centric quality standards, internal medicine consultations, and preventive health initiatives at Sri Padmapriya Hospital.",
+    specialInterests: [
+      "Hospital Clinical Direction & Quality Governance",
+      "General & Internal Medicine Consultations",
+      "Preventive Health Checkups & Lifestyle Wellness",
+      "Women's Adult Health & Chronic Disease Management"
+    ],
+    rosterApproved: true,
+    verificationNotes: "Dr. Ishwarya Muralidharan MBBS, MD. Director, Sri Padmapriya Hospital."
   }
 ];
 
