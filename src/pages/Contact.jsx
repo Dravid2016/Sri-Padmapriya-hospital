@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       <SEOHead
         title="Contact & Location Directions | Padmapriya Hospital Adyar, Chennai"
-        description="Visit Sri Padmapriya Hospital at 1st Avenue, Indira Nagar, Adyar, Chennai - 600020. Phone: 044-24451252. Rapid access from Besant Nagar, Thiruvanmiyur, and Kotturpuram."
+        description="Visit Sri Padmapriya Hospital at 1st Avenue, Indira Nagar, Adyar, Chennai - 600020. Phone: 044-24420091, 044-24450878. 24/7 Helpline: 6381907621."
         canonicalPath="/contact"
       />
       
@@ -27,9 +27,9 @@ export default function Contact() {
       </div>
 
       {/* Contact Cards Row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
-        {/* 24/7 Emergency Card */}
+        {/* 24/7 Helpline & Emergency Card */}
         <div className="bg-rose-50 rounded-md border border-rose-200 p-5 space-y-2 relative overflow-hidden">
           <div className="flex items-center justify-between">
             <div className="w-8 h-8 rounded-md bg-rose-600 text-white flex items-center justify-center shadow-xs">
@@ -37,38 +37,41 @@ export default function Contact() {
             </div>
             <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
-              24/7 Service
+              24/7 Helpline
             </span>
           </div>
-          <h3 className="text-xs font-bold uppercase tracking-wider text-rose-900">Emergency Helpline</h3>
-          <p className="text-xs text-rose-800">Casualty & Urgent Care</p>
+          <h3 className="text-xs font-bold uppercase tracking-wider text-rose-900">Enquiry & Emergency</h3>
+          <p className="text-xs text-rose-800">Casualty, Enquiries & Consultations</p>
           <a href={`tel:${hospitalInfo.contact.emergencyNumberRaw}`} className="block text-sm font-bold text-rose-700 font-mono hover:underline">
             {hospitalInfo.contact.emergencyContact}
           </a>
         </div>
 
+        {/* Landline 1 */}
         <div className="bg-white rounded-md border border-[#E5E1E7] p-5 space-y-2">
           <div className="w-8 h-8 rounded-md bg-[#FAF9FB] border border-[#E5E1E7] flex items-center justify-center text-[#78266F]">
             <Phone className="w-4 h-4" />
           </div>
-          <h3 className="text-xs font-bold uppercase tracking-wider text-[#24212A]">Hospital Reception</h3>
-          <p className="text-xs text-[#69636E]">General enquiries & appointments</p>
-          <a href={`tel:${hospitalInfo.contact.receptionLandline}`} className="block text-sm font-bold text-[#78266F] font-mono hover:underline">
-            {hospitalInfo.contact.receptionLandline}
+          <h3 className="text-xs font-bold uppercase tracking-wider text-[#24212A]">Hospital Landline 1</h3>
+          <p className="text-xs text-[#69636E]">Reception desk & appointments</p>
+          <a href={`tel:${hospitalInfo.contact.primaryLandline.replace(/[^0-9]/g, '')}`} className="block text-sm font-bold text-[#78266F] font-mono hover:underline">
+            {hospitalInfo.contact.primaryLandline}
           </a>
         </div>
 
+        {/* Landline 2 */}
         <div className="bg-white rounded-md border border-[#E5E1E7] p-5 space-y-2">
           <div className="w-8 h-8 rounded-md bg-[#FAF9FB] border border-[#E5E1E7] flex items-center justify-center text-[#155943]">
             <Phone className="w-4 h-4" />
           </div>
-          <h3 className="text-xs font-bold uppercase tracking-wider text-[#24212A]">Mobile Enquiries</h3>
-          <p className="text-xs text-[#69636E]">Specialist appointment desk</p>
-          <a href={`tel:${hospitalInfo.contact.enquiryMobile.replace(/\s+/g, '')}`} className="block text-sm font-bold text-[#155943] font-mono hover:underline">
-            {hospitalInfo.contact.enquiryMobile}
+          <h3 className="text-xs font-bold uppercase tracking-wider text-[#24212A]">Hospital Landline 2</h3>
+          <p className="text-xs text-[#69636E]">Direct line & enquiries</p>
+          <a href={`tel:${hospitalInfo.contact.secondaryLandline.replace(/[^0-9]/g, '')}`} className="block text-sm font-bold text-[#155943] font-mono hover:underline">
+            {hospitalInfo.contact.secondaryLandline}
           </a>
         </div>
 
+        {/* Hours of Operation */}
         <div className="bg-white rounded-md border border-[#E5E1E7] p-5 space-y-2">
           <div className="w-8 h-8 rounded-md bg-[#FAF9FB] border border-[#E5E1E7] flex items-center justify-center text-[#24212A]">
             <Clock className="w-4 h-4" />

@@ -44,7 +44,7 @@ export default function AppointmentForm({ defaultDoctor = "" }) {
 
     setLoading(true);
 
-    const enquiryMobileNumber = "7339557417";
+    const enquiryMobileNumber = "6381907621";
     const selectedDoc = formData.preferredDoctor || "Consultant Doctor";
     const sessionText = formData.preferredSession;
     const patientMsg = formData.message ? `\n*Note:* ${formData.message.trim()}` : '';
@@ -78,7 +78,7 @@ export default function AppointmentForm({ defaultDoctor = "" }) {
         console.error("Storage error:", err);
       }
 
-      // Automatically open WhatsApp with pre-filled enquiry to the enquiry number 7339557417
+      // Automatically open WhatsApp with pre-filled enquiry to the enquiry number 6381907621
       try {
         window.open(waUrl, '_blank', 'noopener,noreferrer');
       } catch (err) {
@@ -106,16 +106,16 @@ export default function AppointmentForm({ defaultDoctor = "" }) {
 
         <div className="p-4 rounded-md bg-[#FAF9FB] border border-[#E5E1E7] max-w-md mx-auto text-left text-xs text-[#69636E] space-y-1">
           <div className="font-bold text-[#24212A]">
-            Enquiry Dispatched to Front Desk (+91 73395 57417)
+            Enquiry Dispatched to Hospital Desk (+91 63819 07621)
           </div>
           <p>
-            Your appointment details have been prepared for dispatch to our enquiry helpline at <strong>+91 73395 57417</strong>. Our front desk will verify consultant availability and contact you at <strong>{formData.contactNumber}</strong> to issue your consultation token.
+            Your appointment details have been prepared for dispatch to our enquiry helpline at <strong>+91 63819 07621</strong>. Our front desk will verify consultant availability and contact you at <strong>{formData.contactNumber}</strong> to issue your consultation token.
           </p>
         </div>
 
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href={`https://wa.me/917339557417?text=${encodeURIComponent(
+            href={`https://wa.me/916381907621?text=${encodeURIComponent(
               `*New Appointment Enquiry - Sri Padmapriya Hospital*\n\n` +
               `*Patient Name:* ${formData.patientName.trim()}\n` +
               `*Contact Number:* ${formData.contactNumber.trim()}\n` +
@@ -130,7 +130,7 @@ export default function AppointmentForm({ defaultDoctor = "" }) {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-[#155943] hover:bg-[#0e4030] text-white font-semibold text-xs transition-colors shadow-xs"
           >
             <MessageCircle className="w-3.5 h-3.5" />
-            <span>Send Enquiry to +91 73395 57417</span>
+            <span>Send Enquiry to +91 63819 07621</span>
           </a>
           <a
             href={`tel:${hospitalInfo.contact.receptionLandline}`}

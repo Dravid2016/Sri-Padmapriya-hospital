@@ -102,7 +102,7 @@ export default function Footer() {
             <div className="space-y-2.5 text-xs text-[#E5D7E4]">
               <div className="flex items-center gap-2 text-rose-300 font-bold">
                 <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
-                <span>24/7 Emergency:</span>
+                <span>24/7 Helpline:</span>
                 <a href={`tel:${hospitalInfo.contact.emergencyNumberRaw}`} className="text-white hover:text-rose-200 font-mono">
                   {hospitalInfo.contact.emergencyContact}
                 </a>
@@ -117,15 +117,13 @@ export default function Footer() {
 
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#87D4B6] shrink-0" />
-                <a href={`tel:${hospitalInfo.contact.receptionLandline}`} className="hover:text-white font-mono">
-                  {hospitalInfo.contact.receptionLandline}
+                <span className="text-[#B9A3B7]">Landlines:</span>
+                <a href={`tel:${hospitalInfo.contact.primaryLandline.replace(/[^0-9]/g, '')}`} className="hover:text-white font-mono">
+                  {hospitalInfo.contact.primaryLandline}
                 </a>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#87D4B6] shrink-0" />
-                <a href={`tel:${hospitalInfo.contact.enquiryMobile.replace(/\s+/g, '')}`} className="hover:text-white font-mono">
-                  {hospitalInfo.contact.enquiryMobile}
+                <span className="text-[#87D4B6]">/</span>
+                <a href={`tel:${hospitalInfo.contact.secondaryLandline.replace(/[^0-9]/g, '')}`} className="hover:text-white font-mono">
+                  {hospitalInfo.contact.secondaryLandline}
                 </a>
               </div>
 

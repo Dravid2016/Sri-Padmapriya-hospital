@@ -17,7 +17,7 @@ export default function Home() {
     <div className="space-y-12 sm:space-y-16">
       <SEOHead
         title="Padmapriya Hospital Adyar | Multispeciality Care Chennai"
-        description="Trusted hospital in Indira Nagar, Adyar, Chennai since 2001. Expert consultations in Gynaecology, Surgery, Orthopaedics, Neurology & Diagnostics. Call 044-24451252."
+        description="Trusted hospital in Indira Nagar, Adyar, Chennai since 2001. Expert consultations in Gynaecology, Surgery, Orthopaedics, Neurology & Diagnostics. Call 044-24420091 or 6381907621."
         canonicalPath="/"
       />
       

@@ -27,11 +27,13 @@ export const hospitalInfo = {
   contact: {
     emergencyContact: "+91 63819 07621",
     emergencyNumberRaw: "6381907621",
-    receptionLandline: "044-24451252",
-    additionalLandlines: ["044-24450878", "044-24420091"],
-    enquiryMobile: "+91 73395 57417",
-    enquiryMobileRaw: "7339557417",
-    generalEnquiryMobileAlternative: "+91 97402 54158",
+    enquiryMobile: "+91 63819 07621",
+    enquiryMobileRaw: "6381907621",
+    receptionLandline: "044-24420091",
+    primaryLandline: "044-24420091",
+    secondaryLandline: "044-24450878",
+    additionalLandlines: ["044-24450878"],
+    landlines: ["044-24420091", "044-24450878"],
     email: "info@sripadmapriyahospital.com",
     instagram: {
       handle: "@sripadmapriyahospitaladyar",

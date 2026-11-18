@@ -54,23 +54,23 @@ export default function Appointment() {
                 className="flex items-center gap-2 p-2.5 rounded-md bg-rose-600/40 hover:bg-rose-600/60 text-xs font-mono font-bold transition-colors border border-rose-400/30 text-rose-100"
               >
                 <Phone className="w-4 h-4 text-rose-300" />
-                <span>{hospitalInfo.contact.emergencyContact} (24/7 Emergency)</span>
+                <span>{hospitalInfo.contact.emergencyContact} (24/7 Helpline & Enquiries)</span>
               </a>
 
               <a
-                href={`tel:${hospitalInfo.contact.receptionLandline}`}
+                href={`tel:${hospitalInfo.contact.primaryLandline.replace(/[^0-9]/g, '')}`}
                 className="flex items-center gap-2 p-2.5 rounded-md bg-white/10 hover:bg-white/20 text-xs font-mono font-bold transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#87D4B6]" />
-                <span>{hospitalInfo.contact.receptionLandline} (Reception)</span>
+                <span>{hospitalInfo.contact.primaryLandline} (Landline 1)</span>
               </a>
 
               <a
-                href={`tel:${hospitalInfo.contact.enquiryMobile.replace(/\s+/g, '')}`}
+                href={`tel:${hospitalInfo.contact.secondaryLandline.replace(/[^0-9]/g, '')}`}
                 className="flex items-center gap-2 p-2.5 rounded-md bg-white/10 hover:bg-white/20 text-xs font-mono font-bold transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#87D4B6]" />
-                <span>{hospitalInfo.contact.enquiryMobile} (Enquiries)</span>
+                <span>{hospitalInfo.contact.secondaryLandline} (Landline 2)</span>
               </a>
             </div>
           </div>

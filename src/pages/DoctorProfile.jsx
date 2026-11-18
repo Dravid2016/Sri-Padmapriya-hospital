@@ -41,7 +41,7 @@ export default function DoctorProfile() {
         "postalCode": "600020",
         "addressCountry": "IN"
       },
-      "telephone": "+91-44-24451252"
+      "telephone": "+91-44-24420091"
     }
   };
 
