@@ -36,8 +36,6 @@ export default function Home() {
               fetchpriority="high"
             />
           </picture>
-          {/* Subtle gradient to seamlessly melt the image edge into the clean white text area on ultra-wide screens */}
-          <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none" />
         </div>
 
         {/* Mobile-Only Purple Doctor Illustration: Zoomed slightly out, centered, and borderless */}
